@@ -9,7 +9,7 @@ venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition '
 # slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/pdf/2411.13059'
 bibtexurl: 'https://arxiv.org/bibtex/2411.13059'
-citation: 'citation: Rohith Peddi, Saurabh, Ayush Abhay Shrivastava, Parag Singla, Vibhav Gogate. "Towards Unbiased and Robust Spatio-Temporal Scene Graph Generation and Anticipation." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.'
+citation: 'Rohith Peddi, Saurabh, Ayush Abhay Shrivastava, Parag Singla, Vibhav Gogate. "Towards Unbiased and Robust Spatio-Temporal Scene Graph Generation and Anticipation", CVPR 2025'
 ---
 Modern scene graph generation models achieve high accuracy but remain fragile, often failing on rare "tail" classes and under environmental shifts. In this work, we introduce **ImparTail**, a training framework that ensures reliability where it matters most.
 

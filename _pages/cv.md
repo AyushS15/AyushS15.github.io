@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-You can download a PDF copy of my CV [here](/files/MS_CV_temp.pdf).
-
 Education
 ======
 * **B.Tech in Electrical Engineering** (Minor in Computer Science), *Indian Institute of Technology (IIT), Delhi*, 2021 - 2025
@@ -67,3 +65,6 @@ Service and Leadership
 ======
 * **Student Mentor:** Guided 6 first-year students to assist with transition into IIT Delhi
 * **Volunteer:** National Service Scheme (NSS), completed 80+ hours of community service
+
+
+For a more detailed version of my CV, check[here](/files/MS_CV_temp.pdf).
