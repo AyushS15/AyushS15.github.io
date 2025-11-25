@@ -2,7 +2,7 @@
 title: "Towards Unbiased and Robust Spatio-Temporal Scene Graph Generation and Anticipation"
 collection: publications
 category: conferences
-permalink: https://arxiv.org/abs/2411.13059
+permalink: /publication/2025-cvpr-impartail
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2025-02-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition '
