@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: https://arxiv.org/abs/2411.13059
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2025
+date: 2025-02-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition '
 # slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/pdf/2411.13059'
