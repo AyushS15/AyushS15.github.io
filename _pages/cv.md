@@ -67,4 +67,4 @@ Service and Leadership
 * **Volunteer:** National Service Scheme (NSS), completed 80+ hours of community service
 
 
-For a more detailed version of my CV, check[here](/files/MS_CV_temp.pdf).
+For a more detailed version of my CV, check [here](/files/MS_CV_temp.pdf).
