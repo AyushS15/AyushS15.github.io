@@ -114,6 +114,19 @@ function App() {
                       ))}
                     </Timeline>
                   </Panel>
+                  <Panel header={<h4 style={{ marginBottom: 0 }}>Projects</h4>} bordered shaded style={{ marginBottom: 30 }}>
+                    <Timeline align="left">
+                      {resumeData.projects.map((proj, idx) => (
+                        <Timeline.Item key={idx}>
+                          <p style={{ fontWeight: 'bold', fontSize: 16, color: 'var(--rs-text-primary)' }}>{proj.name}</p>
+                          <p style={{ color: 'var(--rs-primary-500)', fontWeight: 600, fontSize: 14 }}>{proj.category}</p>
+                          <ul style={{ paddingLeft: 15, margin: 0, color: 'var(--rs-text-secondary)', lineHeight: 1.6, marginTop: 5 }}>
+                            {proj.details.map((desc, dIdx) => <li key={dIdx}>{desc}</li>)}
+                          </ul>
+                        </Timeline.Item>
+                      ))}
+                    </Timeline>
+                  </Panel>
                 </Col>
 
                 <Col xs={24} md={10}>
@@ -123,14 +136,9 @@ function App() {
                       {resumeData.skills.languages.map((skill, i) => <Tag key={i} color="cyan">{skill}</Tag>)}
                     </TagGroup>
 
-                    <p style={{ fontWeight: 600, marginBottom: 10, color: 'var(--rs-primary-500)' }}>Frameworks & Tools</p>
+                    <p style={{ fontWeight: 600, marginBottom: 10, color: 'var(--rs-primary-500)' }}>Libraries, Frameworks & Tools</p>
                     <TagGroup style={{ marginBottom: 20 }}>
                       {resumeData.skills.tools.map((skill, i) => <Tag key={i} color="blue">{skill}</Tag>)}
-                    </TagGroup>
-
-                    <p style={{ fontWeight: 600, marginBottom: 10, color: 'var(--rs-primary-500)' }}>Research Areas</p>
-                    <TagGroup style={{ marginBottom: 20 }}>
-                      {resumeData.skills.research.map((skill, i) => <Tag key={i} color="violet">{skill}</Tag>)}
                     </TagGroup>
                   </Panel>
 
