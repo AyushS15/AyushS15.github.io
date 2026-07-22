@@ -1,0 +1,73 @@
+:root {
+  /* Vibrant Cyan/Teal as the primary brand color for high contrast against dark */
+  --rs-primary-100: #e0fafe;
+  --rs-primary-200: #b5f2fb;
+  --rs-primary-300: #8ae9f8;
+  --rs-primary-400: #5fdbf4;
+  --rs-primary-500: #34cbf0; /* Main vibrant color */
+  --rs-primary-600: #29a3c0;
+  --rs-primary-700: #1f7b90;
+  --rs-primary-800: #145260;
+  --rs-primary-900: #0a2930;
+
+  /* Increase text contrast */
+  --rs-text-primary: #ffffff;
+  --rs-text-secondary: #c2c7cf;
+}
+
+html, body, #root, .app-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* Deep, elegant indigo-to-black gradient for a rich modern feel */
+  background: radial-gradient(circle at top right, #1f1c3a 0%, #0d0f16 100%);
+  color: var(--rs-text-primary);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Glassmorphism Styles for RSuite Components */
+.rs-panel {
+  backdrop-filter: blur(12px);
+  background-color: rgba(22, 25, 38, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+/* Subtle interactive hover effect for panels */
+.rs-panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px 0 rgba(52, 203, 240, 0.1);
+  border: 1px solid rgba(52, 203, 240, 0.25);
+}
+
+.rs-sidebar {
+  background: rgba(14, 16, 26, 0.7) !important;
+  backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+}
+
+.rs-navbar {
+  background: rgba(14, 16, 26, 0.7) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.rs-panel-heading {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 15px;
+}
+
+/* Enhance tags and sidebar active state contrast */
+.rs-nav-item.rs-nav-item-active {
+  color: var(--rs-primary-500) !important;
+  background: rgba(52, 203, 240, 0.1) !important;
+  border-radius: 6px;
+  font-weight: 600;
+}
