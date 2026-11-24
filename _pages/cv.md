@@ -11,15 +11,16 @@ redirect_from:
 
 Education
 ======
+* **Master of Science in Computer Science**, *University of California, Los Angeles (UCLA)*, Sept 2026 – June 2028
 * **B.Tech in Electrical Engineering** (Minor in Computer Science), *Indian Institute of Technology (IIT), Delhi*, 2021 - 2025
   * **GPA:** 8.689/10
 
 Research Experience
 ======
-* **Researcher** (Aug 2024 - Aug 2025)
+* **Researcher** (Aug 2024 - Sept 2026)
   * *Data Analytics and Intelligence Research (DAIR) Group, IIT Delhi*
   * Developed "ImparTail" framework using curriculum learning to reduce bias in Scene Graph Generation
-  * Paper accepted as a **CVPR 2025 Highlight**
+  * Paper accepted as a **CVPR 2025 Highlight** (Top 3% of 13,000+ submissions)
   * Advisors: Prof. Parag Singla, Prof. Vibhav Gogate
 
 * **AI Research Intern** (Mar 2025 - June 2025)
@@ -27,16 +28,11 @@ Research Experience
   * Integrated hybrid visual backbones to improve phishing website recognition
   * Proved object-centric detection is more robust to distribution shifts than global classification
 
-* **Research Contributor** (Jan 2025 - Feb 2025)
-  * *Global Risk and AI Safety Preparedness (GRASP)*
-  * Analyzed latent adversarial training and "safe-by-design" AI architectures
-  * Authored technical analysis on world model hierarchies for **AI Safety Connect, Paris AI Action Summit, 2025**
-
 Industry Experience
 ======
-* **Software Engineer 1** (Aug 2025 - Present)
+* **Software Engineer 1** (Aug 2025 - Aug 2026)
   * *LG Ad Solutions, Bangalore*
-  * Optimizing real-time ML inference monitoring (InfluxDB) and securing ArgoCD pipelines
+  * Drove Infrastructure as Code via Terraform for AWS, built serverless pipeline via AWS Batch, and led cloud migration.
 
 * **Engineering Intern** (May 2024 - June 2024)
   * *Eightfold.ai, Noida*
