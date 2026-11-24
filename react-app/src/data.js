@@ -148,11 +148,11 @@ export const projectsData = [
     media: [
       {
         id: "side_by_side",
-        tab: "Live Side-by-Side Demo",
-        title: "Real-to-Sim Franka Panda Retargeting",
-        src: "/assets/humanoid_side_by_side.gif",
-        badge: "Live Side-by-Side Execution",
-        caption: "Left: 6-second egocentric smartphone video of a human grasping a steel tumbler. Right: Retargeted Franka Panda arm autonomously executing the grasp and lift in RoboSuite / MuJoCo."
+        tab: "Successful Pick & Place",
+        title: "Real-to-Sim Franka Panda Retargeting (Successful Lift)",
+        src: "/assets/Vid_0_ct_iter5_final_pick_place.gif",
+        badge: "Pick & Place: 7.2cm Lift Success",
+        caption: "Left: 6-second egocentric smartphone video with CoTracker3 dense surface tracking on a cylindrical tumbler (co-motion ρ = 0.68 > 0.55). Right: Franka Panda arm autonomously executing the grasp and 7.2cm lift in RoboSuite / MuJoCo."
       },
       {
         id: "cv_approaches",
