@@ -1,10 +1,10 @@
 export const personalInfo = {
   name: "Ayush Abhay Shrivastava",
-  role: "Incoming M.S. CS @ UCLA • AI Researcher & Software Engineer",
+  role: "M.S. CS Student @ UCLA • AI & Robotics Researcher",
   tagline: "Understanding how AI perceives, reasons, and acts in the physical world.",
   subtagline: "Building spatio-temporal representations, video world models, and robotic policies that are robust, unbiased, and safe.",
   avatar: "/assets/profile.png",
-  location: "Los Angeles, CA / Bangalore, India",
+  location: "Los Angeles, CA",
   email: "ayushshrivastava391@gmail.com",
   phone: "+1 2135886944",
   links: {
@@ -24,19 +24,20 @@ export const personalInfo = {
     "NLP"
   ],
   bioParagraphs: [
-    "I am an incoming Master of Science in Computer Science student at UCLA (Sept 2026 – June 2028). I take ideas from cutting-edge research papers, implement them from scratch, and dig into why and when they fail under critical, low-probability tail events.",
-    "Previously, I worked as a Software Engineer at LG Ad Solutions building and optimizing large-scale distributed cloud and simulation pipelines. Before joining industry, I graduated from the Indian Institute of Technology (IIT), Delhi with a major in Electrical Engineering and a minor in Computer Science.",
+    "I am a Master of Science in Computer Science student at UCLA (2026 – 2028). I take ideas from cutting-edge research papers, implement them from scratch, and dig into why and when they fail under critical, low-probability tail events and physical distribution shifts.",
+    "Prior to graduate studies at UCLA, I worked as a Software Engineer at LG Ad Solutions building and optimizing large-scale distributed cloud and simulation pipelines. Before joining industry, I graduated from the Indian Institute of Technology (IIT), Delhi with a major in Electrical Engineering and a minor in Computer Science.",
     "My research spans spatio-temporal scene understanding, neuro-symbolic temporal logic mining, and real-to-sim manipulation via Vision-Language-Action (VLA) policies. Recently, our paper on debiasing spatio-temporal scene graph generation—'ImparTail'—was accepted as a Highlight Paper (Top 3% of 13,000+ submissions) at IEEE/CVF CVPR 2025."
   ],
   profileYaml: {
-    now: "M.S. Computer Science (Incoming), UCLA · June 2028",
-    before: "B.Tech Electrical Eng (Minor CS), IIT Delhi · June 2025",
+    now: "M.S. Computer Science, UCLA · 2026 – 2028",
+    before: "B.Tech Electrical Eng (Minor CS), IIT Delhi · 2021 – 2025",
+    past_work: "Software Engineer @ LG Ad Solutions",
     currently: [
+      "Real-to-sim robot manipulation retargeting egocentric video to Franka Panda & SmolVLA",
       "Evaluating Video World Models (Wan 2.2, Cosmos 3) on PNR failure events",
-      "Mining temporal logic rules with DeepSeek-R1 for neuro-symbolic scene understanding",
-      "Real-to-sim manipulation retargeting egocentric video to Franka Panda & SmolVLA"
+      "Mining temporal logic rules with DeepSeek-R1 for neuro-symbolic scene understanding"
     ],
-    based_in: "Los Angeles, CA / Bangalore, India"
+    based_in: "Los Angeles, CA"
   }
 };
 
@@ -243,7 +244,7 @@ export const experienceData = [
     company: "LG Ad Solutions",
     location: "Bangalore, India",
     date: "Aug 2025 – Aug 2026",
-    badge: "Industry",
+    badge: "Prior Industry",
     bullets: [
       "Drove Infrastructure as Code (IaC) via Terraform and Atmos for AWS infrastructure, reducing deployment time by 20%.",
       "Built a resilient serverless pipeline using AWS Batch and EventBridge for heavy asynchronous simulation workloads, replacing Knative.",
@@ -317,10 +318,10 @@ export const educationData = [
     degree: "Master of Science in Computer Science",
     institution: "University of California, Los Angeles (UCLA)",
     location: "Los Angeles, CA",
-    date: "Sept 2026 – June 2028 (expected)",
-    status: "Incoming Student",
+    date: "Sept 2026 – June 2028",
+    status: "Graduate Student",
     badge: "UCLA MSCS",
-    summary: "Incoming graduate student focusing on Computer Vision, Robot Policy Learning, World Models, and Neuro-symbolic AI."
+    summary: "Graduate student in Computer Science focusing on Computer Vision, Robot Policy Learning, World Models, and Neuro-symbolic AI."
   },
   {
     degree: "Bachelor of Technology in Electrical Engineering",

@@ -218,11 +218,11 @@ function App() {
           <div>
             <div className="badge badge-cyan !py-[6px] !px-3 mb-6" style={{ display: 'inline-flex' }}>
               <span className="status-dot" aria-hidden="true" />
-              Incoming M.S. CS @ UCLA · CVPR 2025 Highlight Author
+              M.S. CS Student @ UCLA · CVPR 2025 Highlight Author
             </div>
 
             <p className="eyebrow mb-4">
-              $ cat now.txt → World Models · Neuro-symbolic AI · Robot Learning
+              $ cat now.txt → UCLA CS · World Models · Neuro-symbolic AI · Robot Learning
             </p>
 
             <h1 className="h-hero mb-6">
@@ -233,7 +233,7 @@ function App() {
             </h1>
 
             <p className="muted prose-w mb-8 text-[0.95rem]">
-              I'm Ayush, an incoming M.S. Computer Science student at <span style={{ color: 'var(--white)', fontWeight: 600 }}>UCLA</span> and an Electrical Engineering (Minor CS) graduate of <span style={{ color: 'var(--white)', fontWeight: 600 }}>IIT Delhi</span>. I take ideas from research papers, build them from scratch, and dig into why they work under rare, low-probability physical events and severe distribution shifts.
+              I'm Ayush, a Master of Science in Computer Science student at <span style={{ color: 'var(--white)', fontWeight: 600 }}>UCLA</span> and an Electrical Engineering (Minor CS) graduate of <span style={{ color: 'var(--white)', fontWeight: 600 }}>IIT Delhi</span>. I take ideas from research papers, build them from scratch, and investigate why and when they fail under rare physical events and severe distribution shifts.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
@@ -283,13 +283,13 @@ function App() {
             <h2 className="h2 mb-6">From paper to working code, and the reason it works.</h2>
             <div className="muted prose-w text-[0.95rem]" style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
               <p>
-                I'm an incoming M.S. Computer Science student at <span style={{ color: 'var(--white)', fontWeight: 600 }}>UCLA</span> (starting Fall 2026) and a 2025 graduate of <span style={{ color: 'var(--white)', fontWeight: 600 }}>IIT Delhi</span> with a major in Electrical Engineering and a minor in Computer Science.
+                I am a Master of Science in Computer Science student at <span style={{ color: 'var(--white)', fontWeight: 600 }}>UCLA</span>, and an Electrical Engineering (Minor in Computer Science) alumnus of the <span style={{ color: 'var(--white)', fontWeight: 600 }}>Indian Institute of Technology (IIT), Delhi</span>.
               </p>
               <p>
                 My work centers on three pillars: understanding the failure dynamics of modern deep learning in safety-critical tail regimes, building neuro-symbolic systems constrained by formal temporal logic, and retargeting human video demonstrations into robust robotic manipulation policies.
               </p>
               <p>
-                Before graduate studies, I worked as a Software Engineer at <span style={{ color: 'var(--white)', fontWeight: 600 }}>LG Ad Solutions</span> optimizing distributed asynchronous simulation workloads, and spent two years at IIT Delhi's <span style={{ color: 'var(--white)', fontWeight: 600 }}>DAIR Lab</span> working on video scene graph generation, temporal logic extraction with DeepSeek-R1, and evaluating video world models (Wan 2.2, Cosmos 3) on rare physical mishaps.
+                Prior to graduate studies at UCLA, I worked as a Software Engineer at <span style={{ color: 'var(--white)', fontWeight: 600 }}>LG Ad Solutions</span> optimizing distributed asynchronous simulation workloads, and spent two years at IIT Delhi's <span style={{ color: 'var(--white)', fontWeight: 600 }}>DAIR Lab</span> working on video scene graph generation, temporal logic extraction with DeepSeek-R1, and evaluating video world models (Wan 2.2, Cosmos 3) on rare physical mishaps.
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ function App() {
           <aside className="card p-6 md:p-7" style={{ background: 'var(--black)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.4rem' }}>
               <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>profile.yaml</span>
-              <span className="badge badge-cyan">incoming mscs</span>
+              <span className="badge badge-cyan">ucla cs</span>
             </div>
 
             <dl style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', fontSize: '0.85rem' }}>
@@ -306,7 +306,7 @@ function App() {
                 <span className="hl" style={{ marginTop: '2px' }}><Icons.Scholar /></span>
                 <div>
                   <dt style={{ color: 'var(--text-muted)', fontSize: '0.72rem', marginBottom: '2px' }}>now</dt>
-                  <dd style={{ color: 'var(--white)' }}>M.S. Computer Science, UCLA · 2026 – 2028 (Incoming)</dd>
+                  <dd style={{ color: 'var(--white)' }}>M.S. Computer Science, UCLA · 2026 – 2028</dd>
                 </div>
               </div>
 
@@ -336,7 +336,7 @@ function App() {
                 <span className="hl" style={{ marginTop: '2px' }}><Icons.Book /></span>
                 <div>
                   <dt style={{ color: 'var(--text-muted)', fontSize: '0.72rem', marginBottom: '2px' }}>based in</dt>
-                  <dd style={{ color: 'var(--white)' }}>Los Angeles, CA / Bangalore, India</dd>
+                  <dd style={{ color: 'var(--white)' }}>Los Angeles, CA</dd>
                 </div>
               </div>
             </dl>
@@ -695,7 +695,7 @@ function App() {
             <p className="eyebrow mb-2">// 04 — experience</p>
             <h2 className="h2 mb-4">Where I've built and researched.</h2>
             <p className="muted text-sm prose-w">
-              Industry infrastructure scaling at LG Ad Solutions, thesis research at IIT Delhi's DAIR Lab, and security AI internships.
+              Graduate studies at UCLA, previous cloud infrastructure engineering at LG Ad Solutions, thesis research at IIT Delhi's DAIR Lab, and AI security internships.
             </p>
             <div style={{ marginTop: '2rem' }}>
               <a href={personalInfo.links.resume} download="Ayush_Shrivastava_Resume.pdf" className="btn btn-primary text-xs">
@@ -754,7 +754,7 @@ function App() {
             <p className="eyebrow mb-2">// 05 — education</p>
             <h2 className="h2 mb-4">Where I've studied.</h2>
             <p className="muted text-sm prose-w">
-              Undergraduate degree from IIT Delhi in the capital of India, and incoming graduate studies at UCLA in Southern California.
+              Master of Science in Computer Science at UCLA in Los Angeles, California, and Bachelor of Technology from IIT Delhi.
             </p>
           </div>
 

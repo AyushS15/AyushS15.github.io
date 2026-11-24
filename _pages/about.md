@@ -9,9 +9,9 @@ redirect_from:
 
 Hi, I'm **Ayush**. 👋
 
-I am a researcher and engineer based in Bangalore, driven by the goal of making Artificial Intelligence more reliable, transparent, and safe for the real world.
+I am an AI researcher and Master of Science in Computer Science student at the **University of California, Los Angeles (UCLA)**, driven by the goal of making Artificial Intelligence more reliable, transparent, and safe for the real world.
 
-Currently, I work as a Software Engineer at **LG Ad Solutions**, where I build and optimize large-scale inference systems. Before joining the industry, I graduated from the **Indian Institute of Technology (IIT), Delhi**  with a major in Electrical Engineering and a minor in Computer Science.
+Previously, I worked as a Software Engineer at **LG Ad Solutions** building and optimizing large-scale distributed cloud and simulation pipelines. Before joining the industry, I graduated from the **Indian Institute of Technology (IIT), Delhi** with a major in Electrical Engineering and a minor in Computer Science.
 
 ### 🔭 Research & Philosophy
 My research interests lie at the intersection of **Computer Vision**, **AI Safety**, and **Neuro-symbolic AI**. I am particularly focused on the "fragility" of modern deep learning—specifically how models that perform well on average often fail in critical, low-probability "tail" scenarios.
