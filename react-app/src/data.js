@@ -1,7 +1,8 @@
 export const personalInfo = {
   name: "Ayush Abhay Shrivastava",
   role: "Incoming M.S. CS @ UCLA • AI Researcher & Software Engineer",
-  tagline: "Building Robust, Unbiased, and Safe AI Systems for Vision, World Models & Robotics",
+  tagline: "Understanding how AI perceives, reasons, and acts in the physical world.",
+  subtagline: "Building spatio-temporal representations, video world models, and robotic policies that are robust, unbiased, and safe.",
   avatar: "/assets/profile.png",
   location: "Los Angeles, CA / Bangalore, India",
   email: "ayushshrivastava391@gmail.com",
@@ -23,10 +24,20 @@ export const personalInfo = {
     "NLP"
   ],
   bioParagraphs: [
-    "I am an incoming Master of Science in Computer Science student at UCLA (Sept 2026 – June 2028), passionate about solving the fragility of deep neural networks under distributional shifts, rare 'tail' anomalies, and safety-critical physical constraints.",
-    "Previously, I worked as a Software Engineer at LG Ad Solutions building large-scale distributed cloud and simulation pipelines. Before that, I graduated from the Indian Institute of Technology (IIT), Delhi with a major in Electrical Engineering and a minor in Computer Science.",
-    "My research spans spatio-temporal scene understanding, neuro-symbolic reasoning with temporal logic priors, and real-to-sim manipulation via Vision-Language-Action (VLA) policies. Recently, our paper on debiasing spatio-temporal scene graph generation—'ImparTail'—was accepted as a Highlight Paper (Top 3% of 13,000+ submissions) at IEEE/CVF CVPR 2025."
-  ]
+    "I am an incoming Master of Science in Computer Science student at UCLA (Sept 2026 – June 2028). I take ideas from cutting-edge research papers, implement them from scratch, and dig into why and when they fail under critical, low-probability tail events.",
+    "Previously, I worked as a Software Engineer at LG Ad Solutions building and optimizing large-scale distributed cloud and simulation pipelines. Before joining industry, I graduated from the Indian Institute of Technology (IIT), Delhi with a major in Electrical Engineering and a minor in Computer Science.",
+    "My research spans spatio-temporal scene understanding, neuro-symbolic temporal logic mining, and real-to-sim manipulation via Vision-Language-Action (VLA) policies. Recently, our paper on debiasing spatio-temporal scene graph generation—'ImparTail'—was accepted as a Highlight Paper (Top 3% of 13,000+ submissions) at IEEE/CVF CVPR 2025."
+  ],
+  profileYaml: {
+    now: "M.S. Computer Science (Incoming), UCLA · June 2028",
+    before: "B.Tech Electrical Eng (Minor CS), IIT Delhi · June 2025",
+    currently: [
+      "Evaluating Video World Models (Wan 2.2, Cosmos 3) on PNR failure events",
+      "Mining temporal logic rules with DeepSeek-R1 for neuro-symbolic scene understanding",
+      "Real-to-sim manipulation retargeting egocentric video to Franka Panda & SmolVLA"
+    ],
+    based_in: "Los Angeles, CA / Bangalore, India"
+  }
 };
 
 export const publicationsData = [
@@ -34,7 +45,7 @@ export const publicationsData = [
     id: "impartail",
     title: "Towards Unbiased and Robust Spatio-Temporal Scene Graph Generation and Anticipation",
     venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)",
-    badge: "Highlight Paper • Top 3% of 13,000+ Submissions",
+    badge: "CVPR 2025 Highlight • Top 3%",
     date: "CVPR 2025",
     authors: [
       { name: "Rohith Peddi", isSelf: false },
@@ -43,7 +54,7 @@ export const publicationsData = [
       { name: "Parag Singla", isSelf: false },
       { name: "Vibhav Gogate", isSelf: false }
     ],
-    abstract: "Spatio-Temporal Scene Graphs (STSGs) model dynamic scenes by representing objects and their evolving relationships. However, real-world visual relationships exhibit severe long-tailed bias, causing existing Video Scene Graph Generation (VidSGG) and Scene Graph Anticipation (SGA) models to over-predict dominant head predicates. We present ImparTail, an architectural-free framework combining loss-masking and curriculum learning that suppresses head-class dominance and amplifies tail representation. We also formulate two new benchmarks: Robust Spatio-Temporal Scene Graph Generation and Anticipation under adversarial input corruptions.",
+    abstract: "Spatio-Temporal Scene Graphs (STSGs) model dynamic visual relationships over time. However, real-world visual relationships exhibit severe long-tailed bias, causing standard Video Scene Graph Generation (VidSGG) and Anticipation (SGA) models to over-predict dominant head predicates. We present ImparTail, an architectural-free framework combining loss-masking and curriculum learning that suppresses head-class dominance and amplifies tail representation. We also introduce two new benchmarks: Robust Spatio-Temporal Scene Graph Generation and Anticipation under adversarial input corruptions.",
     links: {
       arxiv: "https://arxiv.org/abs/2411.13059",
       pdf: "https://arxiv.org/pdf/2411.13059",
@@ -54,44 +65,48 @@ export const publicationsData = [
   year={2025}
 }`
     },
-    metrics: [
-      { label: "Acceptance Tier", value: "Top 3% Highlight" },
-      { label: "Tail Mean Recall@50", value: "+52% Relative Gain" },
-      { label: "Robustness Gain", value: "+23% under Corruptions" },
-      { label: "Submissions", value: "13,000+ Reviewed" }
+    telemetry: [
+      { label: "acceptance", value: "Top 3% Highlight" },
+      { label: "tail mR@50", value: "+52% relative" },
+      { label: "robustness", value: "+23% under shifts" },
+      { label: "submissions", value: "13,000+ papers" }
+    ],
+    evaluationBars: [
+      { label: "tail-class Mean Recall@50", value: "+52% (relative)", percentage: 92 },
+      { label: "corruption robustness gain", value: "+23% (mR@50)", percentage: 86 },
+      { label: "review score percentile", value: "Top 3% Highlight", percentage: 97 }
     ],
     figures: [
       {
         id: "overview",
-        title: "ImparTail Architecture & Curriculum Masking",
+        tab: "Architecture",
+        title: "ImparTail Architecture & Curriculum Loss Masking",
         src: "/assets/impartail_overview.png",
         caption: "ImparTail end-to-end framework: combines Object Representation Processing (ORPU) and Spatio-Temporal Context Processing (STPU) with curriculum-driven loss masking to prevent head-class gradient saturation."
       },
       {
+        id: "recall",
+        tab: "Recall Gains",
+        title: "Unbiased Benchmark Evaluation on Action Genome",
+        src: "/assets/impartail_recall.png",
+        caption: "Recall vs Mean Recall comparison on Action Genome. ImparTail achieves superior balanced performance across both frequent head predicates and ultra-rare tail predicates."
+      },
+      {
         id: "task",
+        tab: "Task",
         title: "Spatio-Temporal Scene Graph Formulation",
         src: "/assets/impartail_task.png",
         caption: "Comparing VidSGG (detecting observed spatio-temporal relationships) with SGA (anticipating future dynamic human-object interactions across temporal horizons)."
       },
       {
-        id: "recall",
-        title: "Unbiased Benchmark Evaluation",
-        src: "/assets/impartail_recall.png",
-        caption: "Detailed Recall vs Mean Recall comparison on Action Genome. ImparTail achieves superior balanced performance across both common and ultra-rare predicate categories."
-      },
-      {
         id: "motivation",
+        tab: "Motivation",
         title: "Long-Tail Relationship Imbalance",
         src: "/assets/impartail_motivation.png",
-        caption: "Skewed distribution of relationship predicates in video datasets, illustrating the severe tail-class degradation in conventional models."
+        caption: "Severe skew in relationship predicates in dynamic video datasets, illustrating the tail-class collapse in un-masked estimators."
       }
     ],
-    highlights: [
-      "Accepted as a Highlight Paper at CVPR 2025 (selected among the top 3% of over 13,000 submissions).",
-      "Introduced 'ImparTail': a novel curriculum-guided dynamic loss-masking approach without requiring extra network parameters.",
-      "Established two new industry-grade evaluation benchmarks: Robust Video Scene Graph Generation and Robust Scene Graph Anticipation under standard image corruptions.",
-      "Achieved state-of-the-art unbiased performance on the Action Genome benchmark, boosting tail-class Mean Recall@50 by ~52% (relative)."
-    ]
+    tags: ["CVPR 2025", "VidSGG", "Scene Graph Anticipation", "Curriculum Learning", "Loss Masking", "PyTorch"]
   }
 ];
 
@@ -116,32 +131,36 @@ export const projectsData = [
       "PyTorch",
       "Real-to-Sim"
     ],
-    summary: "Built an end-to-end AI and robotics pipeline that retargets unstructured egocentric smartphone videos of everyday human grasping into high-fidelity 7-DoF Franka Panda manipulation trajectories in MuJoCo, and trains a 450M parameter SmolVLA policy for closed-loop autonomous execution.",
+    summary: "Built an end-to-end AI and robotics pipeline retargeting unstructured egocentric smartphone videos of human manipulation into high-fidelity 7-DoF Franka Panda trajectories in MuJoCo. Solved hand-object occlusion failures using CoTracker3 dense point tracking and co-motion correlation (ρ > 0.55), and fine-tuned a 450M parameter SmolVLA policy for autonomous closed-loop execution.",
+    telemetry: [
+      { label: "lift outcome", value: "7.2cm [SUCCESS]" },
+      { label: "point tracking", value: "CoTracker3 Dense" },
+      { label: "action chunk", value: "K = 5 horizon" },
+      { label: "wrist approach", value: "0° (squared)" }
+    ],
+    evaluationBars: [
+      { label: "closed-loop lift height", value: "7.2 cm [SUCCESS]", percentage: 95 },
+      { label: "co-motion correlation latch", value: "ρ > 0.55 threshold", percentage: 92 },
+      { label: "contact friction coefficient", value: "μ = 2.0 (hollow tumbler)", percentage: 90 },
+      { label: "action chunking horizon", value: "K = 5 steps", percentage: 85 }
+    ],
     media: [
       {
-        title: "Real-to-Sim Retargeting (Vid_0 Demo)",
+        id: "side_by_side",
+        tab: "Live Side-by-Side Demo",
+        title: "Real-to-Sim Franka Panda Retargeting",
         src: "/assets/humanoid_side_by_side.gif",
         badge: "Live Side-by-Side Execution",
-        caption: "Left: 6-second egocentric smartphone video of a person picking up a steel glass. Right: Retargeted 7-DoF Franka Panda arm autonomously executing the grasp and lift in RoboSuite/MuJoCo."
+        caption: "Left: 6-second egocentric smartphone video of a human grasping a steel tumbler. Right: Retargeted Franka Panda arm autonomously executing the grasp and lift in RoboSuite / MuJoCo."
       },
       {
-        title: "Tracking Preprocessing Evolution",
+        id: "cv_approaches",
+        tab: "Tracking Evolution",
+        title: "Hand Tracking Preprocessing Benchmark",
         src: "/assets/humanoid_3_approaches.gif",
         badge: "Computer Vision Benchmark",
-        caption: "Comparison of 3 hand tracking preprocessing approaches (letterboxing, cropping, and hybrid fallback) prior to adopting CoTracker3 dense surface point tracking to eliminate line-of-sight occlusion."
+        caption: "Comparison of 3 landmark tracking approaches (letterbox, cropped frame, and hybrid fallback) prior to adopting CoTracker3 dense point tracking to overcome line-of-sight occlusion."
       }
-    ],
-    keyResults: [
-      { label: "Closed-Loop Success", value: "7.2cm Lift & Place" },
-      { label: "Tracking Precision", value: "Dense CoTracker3" },
-      { label: "Action Horizon", value: "K = 5 Chunking" },
-      { label: "Simulator", value: "MuJoCo / RoboSuite" }
-    ],
-    bullets: [
-      "Built an end-to-end real-to-sim pipeline retargeting egocentric human smartphone videos into 7-DoF Franka Panda manipulation trajectories in MuJoCo.",
-      "Resolved severe hand-object occlusion failures during cylindrical grasping by replacing fragile skeletal landmark heuristics with CoTracker3 dense point tracking and co-motion correlation (ρ > 0.55).",
-      "Engineered physical digital twin parameters: adjusted hollow steel tumbler density to 450 kg/m³ (~120g mass), increased contact friction to μ = 2.0, and squared wrist approach from 45° to 0° to achieve the first stable physical lift.",
-      "Fine-tuned a Vision-Language-Action policy (SmolVLA, SigLIP-400M visual backbone + flow-matching action expert head), optimizing action chunk horizons (K = 5) and velocity gains for autonomous closed-loop execution."
     ]
   },
   {
@@ -151,33 +170,35 @@ export const projectsData = [
     category: "Deep Learning & Generative Modeling",
     date: "Apr 2024 – May 2024",
     advisor: "Prof. Parag Singla (IIT Delhi)",
+    metricBadge: "3x Gain (0.65 ARI)",
     links: {
       github: "https://github.com/AyushS15/COL775-A2-Object-Centric-learning"
     },
     tags: ["Slot Attention", "Latent Diffusion", "UNet", "Transformers", "CLEVRTex", "PyTorch"],
-    summary: "Explored slot-conditioned generative representations for complex visual scenes, drastically outperforming standard reconstruction baselines.",
+    summary: "Benchmarked Slot Attention on CLEVRTex (baseline 0.25 ARI) and designed a slot-conditioned Latent Diffusion Model as a modular UNet with alternating residual and transformer cross-attention blocks, boosting unsupervised disentanglement by ~3x to 0.65 ARI.",
     bullets: [
-      "Benchmarked Slot Attention on the complex CLEVRTex texture dataset for unsupervised object disentanglement, establishing a baseline Adjusted Rand Index (ARI) of 0.25.",
-      "Designed and trained a slot-conditioned Latent Diffusion Model, boosting object separation performance by ~3x (reaching 0.65 ARI).",
-      "Implemented the diffusion architecture as a modular UNet incorporating alternating residual convolutional blocks and multi-head transformer cross-attention layers."
+      "Benchmarked Slot Attention on CLEVRTex dataset for unsupervised object disentanglement, establishing a baseline Adjusted Rand Index (ARI) of 0.25.",
+      "Designed a slot-conditioned Latent Diffusion Model, boosting performance by ~3x (to 0.65 ARI).",
+      "Implemented diffusion model as UNet with alternating residual convolutional blocks and transformer cross-attention."
     ]
   },
   {
     id: "automated-math-seq2seq",
     title: "Automated Math Problem Solving with Seq2Seq Models",
-    subtitle: "Translating Natural Language Word Problems into Executable Mathematical Equations",
+    subtitle: "Translating Word Problems to Executable Mathematical Formulas",
     category: "Natural Language Processing",
     date: "Mar 2024 – Apr 2024",
     advisor: "Prof. Parag Singla (IIT Delhi)",
+    metricBadge: "81% Exec Acc",
     links: {
       github: "https://github.com/AyushS15/COL775-A1-Seq2Seq"
     },
     tags: ["BERT", "Bi-LSTM", "Bahdanau Attention", "Beam Search", "PyTorch", "NLP"],
-    summary: "Engineered deep sequence-to-sequence networks to automatically parse diverse math word problems into valid equation sequences evaluated in a runtime sandbox.",
+    summary: "Engineered deep sequence-to-sequence networks to automatically parse natural language math word problems into valid equation sequences evaluated in a runtime sandbox. Reached 78% exact match and 81% execution accuracy via BERT encoder fine-tuning.",
     bullets: [
-      "Developed Seq2Seq architectures to generate and solve complex mathematical expressions from natural language word problems.",
-      "Built a Bi-LSTM network with GloVe word embeddings and Bahdanau attention, reaching 67% exact match and 73% execution accuracy using beam search decoding.",
-      "Fine-tuned a pretrained BERT encoder, elevating performance to 78% exact match and 81% execution accuracy."
+      "Developed Seq2Seq models to generate and solve complex math formulas from word problems using an evaluator.",
+      "Used Bi-LSTM with GloVe embeddings and Bahdanau attention, achieving 67% exact match and 73% execution accuracy through beam search decoding.",
+      "Finetuned BERT as encoder to get 78% exact match and 81% execution accuracy."
     ]
   },
   {
@@ -186,30 +207,32 @@ export const projectsData = [
     subtitle: "Hybrid GraphSAGE & Heterogeneous Graph Architectures",
     category: "Graph Machine Learning",
     date: "June 2026",
+    metricBadge: "0.88 ROC-AUC",
     links: {
       github: "https://github.com/AyushS15/COL761-A2-GNNs"
     },
-    tags: ["Graph Neural Networks", "PyTorch Geometric", "GraphSAGE", "Heterogeneous Graphs"],
-    summary: "Constructed deep graph models for multi-hop neighbor aggregation and multi-relational graphs.",
+    tags: ["PyTorch Geometric", "GraphSAGE", "Heterogeneous GNNs", "Node Classification"],
+    summary: "Built a hybrid GraphSAGE-MLP achieving 0.88 ROC-AUC (+15% gain) via multi-path neighborhood aggregation and implemented heterogeneous GNNs for bipartite user-product graphs (10k+ nodes) reaching 0.85 Weighted F1.",
     bullets: [
-      "Built a hybrid GraphSAGE-MLP pipeline achieving 0.88 ROC-AUC (+15% relative gain) via dynamic multi-path neighbor feature aggregation.",
-      "Implemented a heterogeneous GNN for bipartite user-product interaction networks (10,000+ nodes), achieving 0.85 Weighted F1."
+      "Built hybrid GraphSAGE-MLP achieving 0.88 ROC-AUC (+15% gain) via multi-path aggregation.",
+      "Implemented heterogeneous GNN for bipartite user product graphs (10k+ nodes), reaching 0.85 Weighted F1."
     ]
   },
   {
     id: "detr-foggy-cityscapes",
     title: "Object Detection on Foggy Cityscapes Dataset",
-    subtitle: "Robust Detection under Severe Adverse Weather",
+    subtitle: "Robust Detection Under Dense Environmental Degradation",
     category: "Computer Vision",
     date: "June 2026",
+    metricBadge: "+10% mAP (Fog)",
     links: {
       github: "https://github.com/AyushS15/COL780-A3-DETR"
     },
-    tags: ["Deformable DETR", "Grounding DINO", "PEFT", "Cityscapes", "PyTorch"],
-    summary: "Evaluated and adapted transformer object detectors under severe environmental degradation.",
+    tags: ["Deformable DETR", "Grounding DINO", "PEFT", "Adverse Weather"],
+    summary: "Fine-tuned Deformable DETR components on Foggy Cityscapes, boosting mAP by ~10% over the baseline under adverse weather conditions, and implemented Parameter-Efficient Fine-Tuning (PEFT) on Grounding DINO with < 1% trainable parameters.",
     bullets: [
-      "Fine-tuned Deformable DETR components on Foggy Cityscapes, boosting detection mAP by ~10% over the baseline under dense fog.",
-      "Implemented Parameter-Efficient Fine-Tuning (PEFT) on Grounding DINO with < 1% trainable parameters, achieving 33.8% mAP."
+      "Fine-tuned Deformable DETR components on Foggy Cityscapes, boosting mAP by ~10% over baseline.",
+      "Implemented PEFT on Grounding DINO with < 1% trainable parameters, achieving 33.8% mAP."
     ]
   }
 ];
@@ -220,23 +243,21 @@ export const experienceData = [
     company: "LG Ad Solutions",
     location: "Bangalore, India",
     date: "Aug 2025 – Aug 2026",
-    type: "Industry",
-    color: "cyan",
+    badge: "Industry",
     bullets: [
-      "Drove Infrastructure as Code (IaC) via Terraform and Atmos for AWS infrastructure, reducing deployment cycle times by 20%.",
+      "Drove Infrastructure as Code (IaC) via Terraform and Atmos for AWS infrastructure, reducing deployment time by 20%.",
       "Built a resilient serverless pipeline using AWS Batch and EventBridge for heavy asynchronous simulation workloads, replacing Knative.",
-      "Benchmarked on-premises compute clusters and led bare-metal hardware migration, driving a 4x throughput increase across CPU, memory, and disk.",
+      "Benchmarked on-premises compute clusters and led hardware migration, driving a 4x throughput increase across CPU, memory, and disk.",
       "Executed minimal-downtime migration of critical on-premises services to AWS, orchestrating live database transitions, DNS cutovers, and replication of over 1TB of S3 object storage."
     ]
   },
   {
-    role: "Student Researcher (Graduate & Thesis)",
+    role: "Student Researcher",
     company: "Data Analytics and Intelligence Research (DAIR) Group, IIT Delhi",
     location: "New Delhi, India",
     date: "Aug 2024 – Sept 2026",
     advisor: "Prof. Parag Singla & Prof. Vibhav Gogate",
-    type: "Research",
-    color: "blue",
+    badge: "Research",
     projects: [
       {
         title: "Evaluating Video World Models on Long-Tail & OOD Events",
@@ -244,7 +265,7 @@ export const experienceData = [
         bullets: [
           "Curated a specialized benchmark of rare procedural errors and physical mishaps, isolating pre-event context and Point-of-No-Return (PNR) boundary frames across CaptainCook and OOPS datasets.",
           "Evaluated video world models (Wan 2.2, Cosmos 3, PixVerse) on forecasting rare, out-of-distribution trajectories via post-PNR continuation across zero-shot and conditioned settings.",
-          "Assessed whether models accurately simulate physical failure dynamics (contact mechanics, momentum, object permanence) versus reverting to nominal, frequent outcomes."
+          "Assessed whether models accurately simulate physical failure dynamics (contact mechanics, object permanence) versus reverting to nominal outcomes."
         ]
       },
       {
@@ -252,7 +273,7 @@ export const experienceData = [
         date: "Dec 2024 – Aug 2025",
         bullets: [
           "Engineered a neuro-symbolic pipeline using Chat-UniVi and LongVU to parse long videos into formal logic templates.",
-          "Deployed DeepSeek-R1 to mine 100k+ temporal logic rules with ~90% precision across the Action Genome dataset.",
+          "Deployed DeepSeek-R1 to mine 100k+ temporal rules with ~90% precision across the Action Genome dataset.",
           "Integrated rules as logic priors into Probabilistic Scene Graph (PSG) inference, enforcing 10–15 constraints per video to penalize invalid transitions and guarantee structural consistency."
         ]
       },
@@ -272,8 +293,7 @@ export const experienceData = [
     company: "Sekant Security",
     location: "Remote",
     date: "Mar 2025 – June 2025",
-    type: "Research Internship",
-    color: "violet",
+    badge: "Research Intern",
     bullets: [
       "Conducted ablation studies across YOLO, EfficientFormer, and MobileFormer, establishing object detection as the superior paradigm for robust phishing defense.",
       "Optimized Phishpedia with a Hybrid CNN-Transformer backbone, achieving a 2x inference speedup on the Phish-30K benchmark while maintaining 99.2% precision."
@@ -284,10 +304,9 @@ export const experienceData = [
     company: "Eightfold.ai",
     location: "Noida, India",
     date: "May 2024 – July 2024",
-    type: "Industry Internship",
-    color: "green",
+    badge: "Industry Intern",
     bullets: [
-      "Engineered bulk profile ingestion microservices, reducing data processing latency by ~15% for high-volume enterprise datasets.",
+      "Engineered bulk profile ingestion services, reducing data processing latency by ~15% for high-volume enterprise datasets.",
       "Built automated Pytest pipelines for NLP parsers, cutting testing execution time by ~20% and ensuring strict API integrity."
     ]
   }
@@ -298,31 +317,33 @@ export const educationData = [
     degree: "Master of Science in Computer Science",
     institution: "University of California, Los Angeles (UCLA)",
     location: "Los Angeles, CA",
-    date: "Sept 2026 – June 2028",
+    date: "Sept 2026 – June 2028 (expected)",
     status: "Incoming Student",
-    badge: "UCLA MS CS",
-    highlights: [
-      "Focus: Computer Vision, Robotics, AI Safety & Neuro-symbolic Machine Learning"
-    ]
+    badge: "UCLA MSCS",
+    summary: "Incoming graduate student focusing on Computer Vision, Robot Policy Learning, World Models, and Neuro-symbolic AI."
   },
   {
     degree: "Bachelor of Technology in Electrical Engineering",
     minor: "Minor Specialization in Computer Science",
     institution: "Indian Institute of Technology (IIT), Delhi",
     location: "New Delhi, India",
-    date: "2021 – 2025",
-    badge: "IIT Delhi Alum",
-    highlights: [
-      "Bachelor's Thesis at DAIR Lab advised by Prof. Parag Singla & Prof. Vibhav Gogate",
-      "Ranked in top percentiles in National Engineering Examinations (JEE Advanced AIR 472)"
-    ]
+    date: "Graduated 2025",
+    status: "Graduated",
+    badge: "IIT Delhi",
+    summary: "Major in Electrical Engineering, Minor in Computer Science. Undergraduate thesis on unbiased spatio-temporal scene graph generation advised by Prof. Parag Singla & Prof. Vibhav Gogate."
   }
 ];
 
 export const skillsData = {
+  stackJson: {
+    daily: ["python", "c++", "pytorch", "git", "mujoco"],
+    now: ["vla models", "video world models", "neuro-symbolic ai"],
+    habit: "paper -> code -> why?",
+    shell: "zsh / linux"
+  },
   categories: [
     {
-      name: "Programming Languages",
+      name: "Languages",
       skills: ["Python", "C/C++", "Java", "Golang", "SQL", "JavaScript", "MATLAB"]
     },
     {
